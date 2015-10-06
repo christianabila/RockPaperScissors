@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="jquery-2.1.4.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+        <header>
+            <h2 style="float:left;margin-left:55px;" id="you">You</h2>
+            <h2 style="float:right;display:inline-block;margin-right:30px;" id="computer">Computer</h2>
+        </header>
+        
+        <section>
+            <img id="00" class="borderEffect selection" src="images/rock.png" onclick="stuff(0); $(this).addClass('selected');">
+            <img class="borderEffect" id="0" src="images/rock.png" style="float:right">
+        </section>
+        <section>
+            <img id="11" class="borderEffect selection" src="images/paper.png" onclick="stuff(1); $(this).addClass('selected');">
+            <img class="borderEffect" id="1" src="images/paper.png" style="float:right">
+        </section>
+        <section>
+            <img id="22" class="borderEffect selection" src="images/scissors.png" onclick="stuff(2); $(this).addClass('selected');">
+            <img class="borderEffect" id="2" src="images/scissors.png" style="float:right">
+        </section>
+        
+        <button id="btnPlay" type="button" onclick="shuffle()" disabled>Play</button>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+body {
+  font-family: sans-serif; }
+
+img {
+  float: left;
+  clear: right;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  margin: 10px;
+  border: thin solid white; }
+
+.selection:hover {
+  cursor: pointer;
+  border: thin solid black; }
+
+.borderEffect {
+  transition-duration: 0.3s;
+  transition-timing-function: linear; }
+
+.winner {
+  color: #AAF200; }
+
+button {
+  font-size: 23px;
+  padding: 2px;
+  width: 100%;
+  float: left;
+  clear: left; }
+
+.selected {
+  border: thin solid black; }
+
+@media screen and (max-width: 640px) {
+  img {
+    width: 100px;
+    height: 100px; }
+
+  button {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
